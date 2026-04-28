@@ -1,0 +1,359 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.custom-navbar{
+    background: rgba(0,0,0,0.7);
+    padding: 15px 0;
+}
+
+.logo{
+    font-size: 42px;
+    font-family: 'Dancing Script', cursive;
+    color: white !important;
+}
+
+.navbar-nav .nav-link{
+    color: white;
+    margin: 0 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active{
+    color: #ffbe33;
+}
+
+.nav-icons{
+    gap: 18px;
+    color: white;
+}
+
+.nav-icons i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icons i:hover{
+    color: #ffbe33;
+}
+
+.order-online-btn{
+    border: none;
+    outline: none;
+    background: #ffbe33;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.order-online-btn:hover{
+    background: #e69c00;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('burger-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section h1{
+    font-size: 75px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.hero-section p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* ================= BUTTON ================= */
+
+.main-btn{
+    border: none;
+    outline: none;
+    background: #ffbe33;
+    color: white;
+
+    padding: 14px 35px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.main-btn:hover{
+    background: #e69c00;
+}
+
+.small-btn{
+    padding: 12px 25px;
+}
+
+/* ================= OFFERS SECTION ================= */
+
+.offers-section{
+    background: #f5f5f5;
+}
+
+.offer-card{
+    background: #222831;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    gap: 25px;
+    height: 100%;
+}
+
+.offer-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffbe33;
+}
+
+.offer-card h3,
+.offer-card h2{
+    font-family: 'Dancing Script', cursive;
+}
+
+.offer-card h3{
+    font-size: 40px;
+}
+
+.offer-card h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ================= MENU SECTION ================= */
+
+.menu-section{
+    background: white;
+}
+
+.menu-buttons button{
+    border: none;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.menu-buttons .active-btn,
+.menu-buttons button:hover{
+    background: #222831;
+    color: white;
+}
+
+.menu-card{
+    background: #222831;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-img-area{
+    background: #f1f2f3;
+    text-align: center;
+    padding: 40px;
+    border-bottom-left-radius: 60px;
+}
+
+.card-img-area img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.card-img-area img:hover{
+    transform: scale(1.05);
+}
+
+.menu-content{
+    padding: 30px;
+    color: white;
+}
+
+.menu-content h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.menu-content p{
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.menu-content span{
+    font-size: 26px;
+}
+
+.menu-content button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #ffbe33;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-content button:hover{
+    background: #e69c00;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section{
+    background: #222831;
+}
+
+.about-img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.about-section p{
+    font-size: 18px;
+    line-height: 1.9;
+    margin: 25px 0;
+}
+
+/* ================= BOOKING SECTION ================= */
+
+.booking-section{
+    background: #f5f5f5;
+}
+
+.booking-section .form-control,
+.booking-section .form-select{
+    padding: 15px;
+    height: 55px;
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+.booking-section iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 991px){
+
+    .nav-icons{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .hero-section{
+        text-align: center;
+    }
+
+    .hero-section p{
+        margin: auto auto 30px;
+    }
+
+    .offer-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section{
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px){
+
+    .hero-section h1,
+    .section-title{
+        font-size: 48px;
+    }
+
+    .offer-card h3{
+        font-size: 32px;
+    }
+
+    .offer-card h2{
+        font-size: 40px;
+    }
+
+    .card-img-area img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .menu-content h3{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 576px){
+
+    .hero-section h1,
+    .section-title{
+        font-size: 40px;
+    }
+
+    .hero-section p,
+    .about-section p{
+        font-size: 16px;
+    }
+
+    .offer-img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .booking-section iframe{
+        height: 300px;
+    }
+
+    .main-btn,
+    .order-online-btn{
+        width: 100%;
+    }
+}
