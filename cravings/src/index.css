@@ -1,4 +1,8 @@
-a{
+@import "tailwindcss";
+
+
+
+/* a{
   text-decoration: none !important;
 }
 
@@ -7,5 +11,5 @@ a.hover{
 }
 .container{
   height: 500px;
-}
+} */
 
