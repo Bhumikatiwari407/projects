@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaWifi } from "react-icons/fa";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import React from 'react'

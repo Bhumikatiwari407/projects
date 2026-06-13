@@ -20,12 +20,15 @@ function App() {
       <div className="p-3 h-100 bg-linear-to-b from-orange-600 to-white ">
        
       </div>
-      {/* <Routes>
+      <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-      </Routes> */}
+      </Routes>
 
     </BrowserRouter>
+    
+
+
 
     </>
   );

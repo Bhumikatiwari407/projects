@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from '../components/Header';
 
 const Login = () => {
   const [userName, setUserName] = useState("");
@@ -14,7 +15,10 @@ const Login = () => {
   };
   return (
     <>
-      <div className="d-flex justify-content-center">
+    <Header/>
+      <div className="bg-[url('/commonbg.png')] bg-cover h-screen w-full flex justify-center items-center">
+        <div className="w-5xl mx-auto border p-20 bg-white/70 rounded-2xl flex flex-col justify-center items-center">
+         
         <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
           <h1 className="text-center">Welcome Back!!!</h1>
           <br />
@@ -38,7 +42,7 @@ const Login = () => {
             />
             <br />
             <div className="float-end">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="text-blue-800">
                 Login
               </button>
             </div>
@@ -47,6 +51,7 @@ const Login = () => {
           <p>
             Don't Have an account? <Link to="/register">Register Here</Link>
           </p>
+        </div>
         </div>
       </div>
     </>

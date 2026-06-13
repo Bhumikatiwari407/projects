@@ -1,6 +1,7 @@
 import React from 'react'
  import { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from '../components/Header';
 const Register = () => {
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
@@ -18,9 +19,11 @@ const Register = () => {
   };
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
-          <h1 className="text-center">REGISTER NOW</h1>
+     <div className="bg-[url('/commonbg.png')] bg-cover h-screen w-full flex justify-center items-center">
+            <div className="w-5xl mx-auto border p-20 bg-white/70 rounded-2xl flex flex-col justify-center items-center">
+             
+            <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
+             <h1 className="text-center">REGISTER NOW</h1>
           <br />
           <form onSubmit={handleSubmit}>
             <label htmlFor="fullName">Fullname</label>
@@ -51,17 +54,18 @@ const Register = () => {
             />
             <br />
             <div className="float-end">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="text-blue-800">
                 Register
               </button>
             </div>
           </form>
-           <hr />
+           
           <p>
             Already Have an account? <Link to="/login">Login Here</Link>
           </p>
-        </div>
-      </div>
+            </div>
+            </div>
+          </div>
     </>
   );
 }

@@ -1,5 +1,9 @@
 import React from 'react'
 import Header from '../components/Header';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from './Login';
+import Register from './Register';
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
@@ -11,7 +15,8 @@ const Home = () => {
     >
       <div className="relative z-10">
         {/* Navbar */}
-        <Header/>
+        <Header />
+        
 
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center text-center mt-24 px-4">
