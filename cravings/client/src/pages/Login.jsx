@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from '../components/Header';
 
 const Login = () => {
   const [userName, setUserName] = useState("");
@@ -15,7 +14,7 @@ const Login = () => {
   };
   return (
     <>
-    <Header/>
+    
       <div className="bg-[url('/commonbg.png')] bg-cover h-screen w-full flex justify-center items-center">
         <div className="w-5xl mx-auto border p-20 bg-white/70 rounded-2xl flex flex-col justify-center items-center">
          
