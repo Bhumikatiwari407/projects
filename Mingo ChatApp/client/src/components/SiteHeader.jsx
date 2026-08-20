@@ -61,7 +61,7 @@ const SiteHeader = () => {
           id="theme"
           className="select select-bordered w-fit"
           value={selectedTheme}
-                     onChange={handleThemeChange}
+          onChange={handleThemeChange}
         >
           <option value="light">Light</option>
           <option value="dark">Dark</option>
