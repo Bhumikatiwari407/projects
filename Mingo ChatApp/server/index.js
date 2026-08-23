@@ -18,7 +18,7 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", process.env.FRONTEND_URL],
     credentials: true,
   }),
 );
@@ -28,12 +28,12 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 
 // Routes
-app.use("/auth", AuthRouter);
-app.use("/user", UserRouter);
+app.use("/api/auth", AuthRouter);
+app.use("/api/user", UserRouter);
 
 // Health check
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "Mingo Chat API is running 🚀" });
+app.get("/api", (req, res) => {
+  res.status(200).json({ message: "Mingo Chat 678 API is running 🚀" });
 });
 
 // Global error handler
@@ -50,7 +50,7 @@ const httpServer = http.createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", process.env.FRONTEND_URL],
     credentials: true,
     methods: ["GET", "POST"],
   },
