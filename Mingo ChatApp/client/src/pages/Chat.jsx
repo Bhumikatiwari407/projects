@@ -67,7 +67,7 @@ const Chat = () => {
                 currentUser={user}
               />
             ) : (
-              <div>Select a Friend to start chat</div>
+              <div>Select a Friend to start chat with</div>
             )}
           </div>
         </div>
