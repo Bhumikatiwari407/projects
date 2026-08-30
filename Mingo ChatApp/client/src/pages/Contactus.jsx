@@ -36,7 +36,7 @@ const ContactUs = () => {
         {/* Contact Form */}
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body gap-4">
-            <h2 className="text-xl font-bold text-base-content">Send a Message</h2>
+            <h2 className="text-xl font-bold text-base-content">Send the Message</h2>
 
             <div className="space-y-1">
               <label className="text-sm font-semibold text-base-content/70">Your Name</label>
