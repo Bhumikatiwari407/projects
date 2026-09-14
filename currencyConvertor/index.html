@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    
+    <header class="p-2 text-center ">
+      <h2>CURRENCY CONVERTOR APP</h2>
+    </header>
+
+    <main>
+    <div class="container mt-4">
+
+      <div class="row justify-content-center align-items-center">
+
+        <!-- From Currency -->
+        <div class="col-md-4 text-center mb-3">
+          <img id="fromFlag" src="https://flagsapi.com/IN/flat/64.png" class="flag-img">
+          <select id="fromCurrency" class="form-select mt-2">
+            <option value="AFN">AFGHANISTAN</option>
+<option value="ALL">ALBANIA</option>
+<option value="DZD">ALGERIA</option>
+<option value="ARS">ARGENTINA</option>
+<option value="AUD">AUSTRALIA</option>
+<option value="EUR">AUSTRIA</option>
+<option value="BDT">BANGLADESH</option>
+<option value="EUR">BELGIUM</option>
+<option value="BRL">BRAZIL</option>
+<option value="CAD">CANADA</option>
+<option value="CNY">CHINA</option>
+<option value="DKK">DENMARK</option>
+<option value="EGP">EGYPT</option>
+<option value="EUR">FINLAND</option>
+<option value="EUR">FRANCE</option>
+<option value="EUR">GERMANY</option>
+<option value="EUR">GREECE</option>
+<option value="HKD">HONG KONG</option>
+<option value="HUF">HUNGARY</option>
+<option value="ISK">ICELAND</option>
+<option value="INR">INDIA</option>
+<option value="IDR">INDONESIA</option>
+<option value="IRR">IRAN</option>
+<option value="IQD">IRAQ</option>
+<option value="EUR">IRELAND</option>
+<option value="ILS">ISRAEL</option>
+<option value="EUR">ITALY</option>
+<option value="JPY">JAPAN</option>
+<option value="KES">KENYA</option>
+<option value="KWD">KUWAIT</option>
+<option value="MYR">MALAYSIA</option>
+<option value="MXN">MEXICO</option>
+<option value="NPR">NEPAL</option>
+<option value="EUR">NETHERLANDS</option>
+<option value="NZD">NEW ZEALAND</option>
+<option value="NGN">NIGERIA</option>
+<option value="NOK">NORWAY</option>
+<option value="PKR">PAKISTAN</option>
+<option value="PHP">PHILIPPINES</option>
+<option value="PLN">POLAND</option>
+<option value="EUR">PORTUGAL</option>
+<option value="QAR">QATAR</option>
+<option value="RUB">RUSSIA</option>
+<option value="SAR">SAUDI ARABIA</option>
+<option value="SGD">SINGAPORE</option>
+<option value="ZAR">SOUTH AFRICA</option>
+<option value="KRW">SOUTH KOREA</option>
+<option value="EUR">SPAIN</option>
+<option value="LKR">SRI LANKA</option>
+<option value="SEK">SWEDEN</option>
+<option value="CHF">SWITZERLAND</option>
+<option value="THB">THAILAND</option>
+<option value="TRY">TURKEY</option>
+<option value="UAH">UKRAINE</option>
+<option value="AED">UNITED ARAB EMIRATES</option>
+<option value="GBP">UNITED KINGDOM</option>
+<option value="USD">UNITED STATES</option>
+<option value="VND">VIETNAM</option>
+<option value="ZWL">ZIMBABWE</option>
+          </select>
+        </div>
+
+        <!-- To Currency -->
+        <div class="col-md-4 text-center mb-3">
+          <img id="toFlag" src="https://flagsapi.com/US/flat/64.png" class="flag-img">
+          <select id="toCurrency" class="form-select mt-2">
+           <option value="AFN">AFGHANISTAN</option>
+<option value="ALL">ALBANIA</option>
+<option value="DZD">ALGERIA</option>
+<option value="ARS">ARGENTINA</option>
+<option value="AUD">AUSTRALIA</option>
+<option value="EUR">AUSTRIA</option>
+<option value="BDT">BANGLADESH</option>
+<option value="EUR">BELGIUM</option>
+<option value="BRL">BRAZIL</option>
+<option value="CAD">CANADA</option>
+<option value="CNY">CHINA</option>
+<option value="DKK">DENMARK</option>
+<option value="EGP">EGYPT</option>
+<option value="EUR">FINLAND</option>
+<option value="EUR">FRANCE</option>
+<option value="EUR">GERMANY</option>
+<option value="EUR">GREECE</option>
+<option value="HKD">HONG KONG</option>
+<option value="HUF">HUNGARY</option>
+<option value="ISK">ICELAND</option>
+<option value="INR">INDIA</option>
+<option value="IDR">INDONESIA</option>
+<option value="IRR">IRAN</option>
+<option value="IQD">IRAQ</option>
+<option value="EUR">IRELAND</option>
+<option value="ILS">ISRAEL</option>
+<option value="EUR">ITALY</option>
+<option value="JPY">JAPAN</option>
+<option value="KES">KENYA</option>
+<option value="KWD">KUWAIT</option>
+<option value="MYR">MALAYSIA</option>
+<option value="MXN">MEXICO</option>
+<option value="NPR">NEPAL</option>
+<option value="EUR">NETHERLANDS</option>
+<option value="NZD">NEW ZEALAND</option>
+<option value="NGN">NIGERIA</option>
+<option value="NOK">NORWAY</option>
+<option value="PKR">PAKISTAN</option>
+<option value="PHP">PHILIPPINES</option>
+<option value="PLN">POLAND</option>
+<option value="EUR">PORTUGAL</option>
+<option value="QAR">QATAR</option>
+<option value="RUB">RUSSIA</option>
+<option value="SAR">SAUDI ARABIA</option>
+<option value="SGD">SINGAPORE</option>
+<option value="ZAR">SOUTH AFRICA</option>
+<option value="KRW">SOUTH KOREA</option>
+<option value="EUR">SPAIN</option>
+<option value="LKR">SRI LANKA</option>
+<option value="SEK">SWEDEN</option>
+<option value="CHF">SWITZERLAND</option>
+<option value="THB">THAILAND</option>
+<option value="TRY">TURKEY</option>
+<option value="UAH">UKRAINE</option>
+<option value="AED">UNITED ARAB EMIRATES</option>
+<option value="GBP">UNITED KINGDOM</option>
+<option value="USD">UNITED STATES</option>
+<option value="VND">VIETNAM</option>
+<option value="ZWL">ZIMBABWE</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Amount -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-2">
+          <button class="btn btn-danger w-100" onclick="convertCurrency()">
+            Convert
+          </button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-8 text-center">
+          <h3>Converted Amount :</h3>
+          <h4 id="result">0</h4>
+        </div>
+      </div>
+
+    </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
